@@ -13,7 +13,7 @@ from pymongo import MongoClient
 # Configuration
 # ----------------------------
 st.set_page_config(page_title="Sports Player Dashboard", layout="wide")
-
+# .streamlit/secrets.toml
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
 DB_NAME = os.getenv("MONGO_DB", "sports_dashboard")
 
@@ -320,3 +320,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
